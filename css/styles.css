@@ -36,4 +36,35 @@ nav a:hover {
     background-color: #0056b3;
 }
 
+/* SECCIONES (ESTILO DOS COLUMNAS COMO LA IMAGEN) */
+.section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 5px 10% 50px 10%;}
 
+/* Contenedor del texto (Lado Izquierdo) */
+.contenido {
+    flex: 1;
+    max-width: 600px;
+    text-align: left; 
+    color: #fff;
+    z-index: 2;
+}
+
+/* Contenedor de Imagen/Informe */
+.area-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.area-visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 183, 255, 0.2); 
+}
