@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Menú */
+nav {
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Secciones */
+section {
+    padding: 50px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
