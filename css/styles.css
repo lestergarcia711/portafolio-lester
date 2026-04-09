@@ -86,3 +86,24 @@ nav a:hover {
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 183, 255, 0.2); 
 }
+.proyectos-grid {
+    display: flex;              /* pone todo en línea */
+    justify-content: center;    /* centra horizontalmente */
+    align-items: center;        /* alinea verticalmente */
+    gap: 40px;                  /* espacio entre elementos */
+    flex-wrap: wrap;            /* evita que se rompa en pantallas pequeñas */
+  }
+  
+  .proyecto {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .proyecto img {
+    width: 100px;       /* mismo ancho */
+    height: 100px;      /* mismo alto */
+    object-fit: cover;  /* evita que se deformen */
+    display: block;
+    margin: 0 auto;
+  }
