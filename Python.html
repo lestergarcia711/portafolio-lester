@@ -3,56 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyectos Git</title>
+
     <style>
-    body{
-            background-color: black;
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #000000, #1c1c1c);
             color: white;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            
-
         }
-        .proyecto{
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .proyecto {
             background-color: red;
-            border-radius: 5px;
-        }
-        .contenido{
-            background-color:blue;
-            color: bisque;
-            border-radius: 5px;
-            
-        }
-        #btn-regresar{
+            border-radius: 10px;
+            padding: 10px 20px;
             display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  #btn-regresar:hover {
-    background-color: darkgreen;
-  }
+        }
 
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .contenido {
+            background: rgba(0, 0, 255, 0.8);
+            color: bisque;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            line-height: 1.6;
+        }
+        .botones {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;.botones {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn-repo {
+            padding: 10px 20px;
+            background-color: #1a4ed8;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-repo:hover {
+            background-color: #37ee12;
+            color: black;
+        }
+
+        #btn-regresar {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold; /* corregido */
+            transition: 0.3s;
+        }
+
+        #btn-regresar:hover {
+            background-color: darkgreen;
+            transform: scale(1.05);
+        }
     </style>
 </head>
-<body>
-    <h1 class="proyecto">
-        Proyectos de Git
-    </h1>
- 
-    <div class="contenido">
-        <div >
-            <p>Ha sido esencila el manejo de github en cuanto al uso de un repositorio y
-                y las maneras eficientes que existen para llevar un orden y control de 
-                un proyecto en si como python, html,
-                entre otros.
-            </p>
-        </div>
 
-    </div>
-    <a href="index.html" id="btn-regresar">← Volver al inicio</a>
-    
+<body>
+
+<header>
+    <h1 class="proyecto">Proyectos en python</h1>
+</header>
+
+<main>
+    <section class="contenido">
+        <p>
+            Tomando en cuenta que paython es un lenguaje de programacion de alto nivel,
+            entre los proyectos que realice estan:
+            <ul>
+                <li>Inventario</li>
+                <li>Sistema de control en un parqueo</li>
+                <li>Sistema de registro en un gimnasio</li>
+            </ul>
+             
+        </p>
+
+        <div class="botones">
+            <a href="https://github.com/lestergarcia711/portafolio-lester"
+            class="btn-repo"
+            target="_blank"
+            rel="noopener noreferrer">
+            💻 Ver proyecto
+         </a>
+            <a href="index.html" id="btn-regresar">←Regresar a la pagina principal</a>
+        </div>
+    </section>
+</main>
+
 </body>
 </html>

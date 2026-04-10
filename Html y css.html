@@ -3,55 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyectos</title>
+
     <style>
-        body{
-            background-color: black;
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #360202, #1a1a1a);
             color: white;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            
-
         }
-        .proyecto{
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .proyecto {
             background-color: red;
-            border-radius: 5px;
-        }
-        .contenido{
-            background-color:blue;
-            color: bisque;
-            border-radius: 5px;
-            
-        }
-        #btn-regresar{
+            border-radius: 10px;
+            padding: 10px;
             display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  #btn-regresar:hover {
-    background-color: darkgreen;
-  }
+        }
 
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
 
+        .contenido {
+            background-color: blue;
+            color: bisque;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .botones {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-repo {
+            padding: 10px 20px;
+            background-color: #1a4ed8;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-repo:hover {
+            background-color: #37ee12;
+            color: black;
+        }
+
+        #btn-regresar {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        #btn-regresar:hover {
+            background-color: darkgreen;
+        }
     </style>
 </head>
+
 <body>
-    <h1 class="proyecto">
-        Proyectos en Html-Css
-    </h1>
- 
-    <div class="contenido">
-        <H2>""Creacion de portafolio""</H2>
-        <div >
-            <p>Se aplico conocimiento en html y css para realizar el diseño de un portafolio digital</p>
+
+<header>
+    <h1 class="proyecto">Proyectos en Html-Css</h1>
+</header>
+
+<main>
+    <section class="contenido">
+        <h2>"Creacion de portafolio"</h2>
+
+        <p>
+            Se aplico conocimiento en html y css para realizar el diseño de un portafolio digital.
+        </p>
+
+        <div class="botones">
+            <a href="https://github.com/lestergarcia711/portafolio-lester"
+               class="btn-repo"
+               target="_blank"
+               rel="noopener noreferrer">
+               💻 Ver proyecto en GitHub
+            </a>
+
+            <a href="index.html" id="btn-regresar">
+               ← Regresar a pagina principal
+            </a>
         </div>
 
-    </div>
-    <a href="index.html" id="btn-regresar">← Volver al inicio</a>
+    </section>
+</main>
 
-    
 </body>
 </html>
