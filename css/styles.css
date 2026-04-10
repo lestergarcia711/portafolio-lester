@@ -120,22 +120,51 @@ nav a:hover {
 ========================= */
 .proyectos-grid {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* mejor que space-between */
+    align-items: stretch;
     gap: 40px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .proyecto {
     text-align: center;
     text-decoration: none;
     color: black;
+    width: 300px; /* controla el tamaño del bloque */
 }
 
 .proyecto img {
-    width: 100px;
-    height: 100px;
+    width: 100%; /* se adapta al contenedor */
+    height: 250px; /* más grande */
     object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* efecto hover */
+.proyecto img:hover {
+    transform: scale(1.05);
+}
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.redes {
+    margin-top: 15px;
+}
+
+.redes a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: #00aced;
+    transform: scale(1.2);
 }
